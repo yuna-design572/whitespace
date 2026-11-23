@@ -16,6 +16,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
         <header class="header">
@@ -120,7 +124,9 @@ You can also publish a note to the internet and share the URL with others.
                 </p>
             </div>
             <div class="prices">
-                <div class="price1">
+              <div class="swiper price-swiper">
+                <div class="clients swiper-wrapper">
+                <div class="price1 swiper-slide">
                     <h3>Free</h3>
                     <h4 class="fee">$0</h4>
                     <p>Capture ideas and find them quickly</p>
@@ -150,7 +156,7 @@ You can also publish a note to the internet and share the URL with others.
                     </div>
                     <a href="#" class="started-button">Get Started</a>
                 </div>
-                <div class="price2">
+                <div class="price2 swiper-slide">
                     <h3>Personal</h3>
                     <h4 class="personal">$11.99</h4>
                     <p>Keep home and family on track</p>
@@ -180,7 +186,7 @@ You can also publish a note to the internet and share the URL with others.
                     </div>
                     <a href="#" class="started-button2">Get Started</a>
                 </div>
-                <div class="price1">
+                <div class="price1 swiper-slide">
                     <h3>Organization</h3>
                     <h4 class="fee">$49.99</h4>
                     <p>Capture ideas and find them quickly</p>
@@ -210,8 +216,11 @@ You can also publish a note to the internet and share the URL with others.
                     </div>
                     <a href="#" class="started-button">Get Started</a>
                 </div>
-                            <img src="images/Slider.svg" class="dots-sp">
             </div>
+            <div class="swiper-pagination"></div>
+                </div>
+
+    
         </section>
 
         <section class="taskey">
@@ -264,8 +273,9 @@ You can also publish a note to the internet and share the URL with others.
 
         <section class="says">
             <h2 class="title">What Our Clients <span class="marker">Says</span></h2>
-            <div class="clients">
-                <div class="saying1">
+              <div class="swiper testimonial-swiper">
+                <div class="clients swiper-wrapper">
+                <div class="saying1 swiper-slide">
                     <img src="images/quote_navy.svg">
                     <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
                         </p>
@@ -279,7 +289,7 @@ You can also publish a note to the internet and share the URL with others.
                         </div>
                     </div>
                 </div>
-                <div class="saying2">
+                <div class="saying2 swiper-slide">
                     <img src="images/quote_white.svg">
                     <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
                         </p>
@@ -293,7 +303,7 @@ You can also publish a note to the internet and share the URL with others.
                         </div>
                     </div>
                 </div>
-                <div class="saying2">
+                <div class="saying2 swiper-slide">
                     <img src="images/quote_white.svg">
                     <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
                         </p>
@@ -308,8 +318,12 @@ You can also publish a note to the internet and share the URL with others.
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>    
+                            <div class="swiper-pagination"></div>
+                </div>
             <img src="images/Slider.svg" class="dots">
+
+
         </section>
 
         <section class="today">
@@ -388,6 +402,8 @@ You can also publish a note to the internet and share the URL with others.
         );
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
 </body>
     </html>
 

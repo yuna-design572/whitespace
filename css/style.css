@@ -294,6 +294,12 @@ li a{
 .price1{
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding-bottom: -100px;
+    border: 1px solid #FFE492;
+    border-radius: 10px;
+    padding: 40px 44px;
+
 }
 .plan-title h2{
     text-align: center;
@@ -356,13 +362,7 @@ li a{
     display: flex;
     justify-content: center;    
 }
-.price1{
-    border: 1px solid #FFE492;
-    border-radius: 10px;
-    padding: 40px 44px;
-    width: 25%;
 
-}
 .price2{
     border-radius: 10px;
     background-color: #043873;
@@ -454,6 +454,9 @@ li a{
     background-image: url(../images/Element.svg);
 }
 /* says */
+.clients{
+    margin: 40px 0;
+}
 .says{
     padding: 100px 0;
 
@@ -461,16 +464,8 @@ li a{
 .says .title{
     text-align: center;
 }
-.clients{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin: 60px 0;
-}
-.saying1, .saying2{
-    width: 25%;
-}
+
+
 .saying1 .border{
     border: 1px solid #212529;
     width: 290px;
@@ -622,10 +617,67 @@ footer{
     display: flex;
     height: 16px;
 }
+/* dots */
+.testimonial-swiper {
+  padding-bottom: 45px;
+}
 
+.testimonial-swiper .swiper-pagination {
+  bottom: 0;
+}
 
+.testimonial-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #4f9cf9;
+  opacity: 1;
+}
 
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background: #043873;
+}
 
+.price-swiper,
+.testimonial-swiper {
+  width: 100%;
+  max-width: 1480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price-swiper .swiper-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+.testimonial-swiper .swiper-wrapper {
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
+}
+
+.price-swiper .swiper-slide,
+.testimonial-swiper .swiper-slide {
+  height: auto;
+  min-width: 0;
+}
+.price-swiper {
+    padding-bottom: 120px;
+}
+
+.price-swiper .swiper-pagination{
+    position: relative;
+    bottom: auto;
+    margin-top: 30px;
+}
+.testimonial-swiper .swiper-pagination {
+    position: relative;
+    bottom: auto;
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+}
 
 @media (max-width: 768px) {
    
@@ -705,6 +757,7 @@ footer{
 .hero-main{
     flex-direction: column;
     padding: 40px 16px;
+    margin-bottom: -40px;
 }
 .heading-large{
     font-size: 36px;
@@ -743,6 +796,7 @@ footer{
 }
 .work-left{
     width: 100%;
+    margin-bottom: 40px;
 }
 .work-right p{
     text-align: center;
@@ -790,24 +844,20 @@ footer{
     width: 100%;
     text-align: center;
 }
-.price1{
-    display: none;
-}
+
 .dots-sp{
     margin: 0 auto;
     text-align: center;
     display: block;
 }
-.prices{
-    flex-direction: column;
-}
+
 .price2{
     margin-bottom: 20px;
 }
 /* taskey */
 .taskey{
     width: 100%;
-    padding: 60px 16px;
+    padding: 40px 16px;
 }
 .taskey-title,
 .taskey-title .title{
@@ -913,9 +963,7 @@ footer{
 .says .title{
     text-align: center;
 }
-.saying2{
-    display: none;
-}
+
 .saying1{
     width: auto;
     height: auto;
@@ -984,10 +1032,11 @@ footer{
 }
 
 .clients {
-    flex-direction: column;
     width: 100%;
     gap: 20px;
 }
-
+.dots{
+    display: none;
+}
 }
 
